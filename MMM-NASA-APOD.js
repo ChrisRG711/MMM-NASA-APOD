@@ -1,11 +1,11 @@
 Module.register('MMM-NasaAPOD', {
   defaults: {
-    apiKey: 'YOUR_API_KEY',
+    apiKey: 'DEMO_KEY', // Default API key
   },
 
   start: function () {
-    this.sendSocketNotification('CONFIG', this.config);
-    this.apodData = null; // Initialize APOD data
+    this.apiKey = this.config.apiKey || this.defaults.apiKey;
+    this.sendSocketNotification('CONFIG', this.apiKey);
   },
 
   notificationReceived: function (notification, payload) {
