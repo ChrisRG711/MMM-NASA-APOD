@@ -1,0 +1,9 @@
+{
+  "name": "MMM-NasaAPOD",
+  "description": "MagicMirror Module for NASA's Astronomy Picture of the Day",
+  "version": "1.0.0",
+  "main": "MMM-NasaAPOD.js",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
