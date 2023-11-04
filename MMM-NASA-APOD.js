@@ -1,4 +1,5 @@
-Module.register('MMM-NasaAPOD', {
+//Main code file //
+Module.register('MMM-NASA-APOD', {
   defaults: {
     apiKey: 'DEMO_KEY', // Default API key
   },
